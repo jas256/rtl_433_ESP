@@ -279,11 +279,45 @@
  * Subset of devices that I have access to and have tested with
  */
 #  define DEVICES         \
+    DECL(fineoffset_WH2)             \
+    DECL(fineoffset_WH25)            \
+    DECL(fineoffset_WH51)            \
+    DECL(fineoffset_WH0530)          \
+    DECL(fineoffset_wh1050)          \
+    DECL(fineoffset_wh1080)          \
+    DECL(fineoffset_wh1080_fsk)      \
+    DECL(fineoffset_wh31l)           \
+    DECL(fineoffset_wh45)            \
+    DECL(fineoffset_wh46)            \
+    DECL(fineoffset_wh55)            \
+    DECL(fineoffset_wn34)            \
+    DECL(fineoffset_ws80)            \
     DECL(fineoffset_ws90)            \
+    DECL(lacrosse_tx141x)            \
+    DECL(tpms_abarth124)             \
+    DECL(tpms_ave)                   \
+    DECL(tpms_bmw)                   \
+    DECL(tpms_bmwg3)                 \
+    DECL(tpms_citroen)               \
+    DECL(tpms_eezrv)                 \
+    DECL(tpms_elantra2012)           \
+    DECL(tpms_ford)                  \
+    DECL(tpms_hyundai_vdo)           \
+    DECL(tpms_jansite)               \
+    DECL(tpms_jansite_solar)         \
+    DECL(tpms_kia)                   \
+    DECL(tpms_nissan)                \
+    DECL(tpms_pmv107j)               \
+    DECL(tpms_porsche)               \
+    DECL(tpms_renault)               \
+    DECL(tpms_renault_0435r)         \
+    DECL(tpms_toyota)                \
+    DECL(tpms_truck)                 \
+    DECL(tpms_tyreguard400)          \
 /* Add new personal decoders here. */
-#  define NUMOFDEVICES 1
-#  define NUMOF_OOK_DEVICES 1 
-#  define NUMOF_FSK_DEVICES 1
+#  define NUMOFDEVICES 35
+#  define NUMOF_OOK_DEVICES 35
+#  define NUMOF_FSK_DEVICES 35
 #endif
 
 #define DECL(name) extern r_device name;
