@@ -353,7 +353,25 @@ void rtlSetup() {
     // end of fragment
 
 #else
-    memcpy(&cfg->devices[0], &lacrosse_tx141x, sizeof(r_device));
+      memcpy(&cfg->devices[0], &fineoffset_ws90, sizeof(r_device));
+      memcpy(&cfg->devices[1], &tpms_abarth124, sizeof(r_device));
+      memcpy(&cfg->devices[2], &tpms_ave, sizeof(r_device));
+      memcpy(&cfg->devices[3], &tpms_bmw, sizeof(r_device));
+      memcpy(&cfg->devices[4], &tpms_bmwg3, sizeof(r_device));
+      memcpy(&cfg->devices[5], &tpms_citroen, sizeof(r_device));
+      memcpy(&cfg->devices[6], &tpms_elantra2012, sizeof(r_device));
+      memcpy(&cfg->devices[7], &tpms_ford, sizeof(r_device));
+      memcpy(&cfg->devices[8], &tpms_hyundai_vdo, sizeof(r_device));
+      memcpy(&cfg->devices[9], &tpms_jansite, sizeof(r_device));
+      memcpy(&cfg->devices[10], &tpms_jansite_solar, sizeof(r_device));
+      memcpy(&cfg->devices[11], &tpms_kia, sizeof(r_device));
+      memcpy(&cfg->devices[12], &tpms_nissan, sizeof(r_device));
+      memcpy(&cfg->devices[13], &tpms_pmv107j, sizeof(r_device));
+      memcpy(&cfg->devices[14], &tpms_porsche, sizeof(r_device));
+      memcpy(&cfg->devices[15], &tpms_renault, sizeof(r_device));
+      memcpy(&cfg->devices[16], &tpms_renault_0435r, sizeof(r_device));
+      memcpy(&cfg->devices[17], &tpms_toyota, sizeof(r_device));
+      memcpy(&cfg->devices[18], &tpms_truck, sizeof(r_device));
 #endif
 
 #ifdef RTL_FLEX
