@@ -43,32 +43,32 @@ void list_push_all(list_t *list, void **p)
         list_push(list, *iter);
 }
 
-void list_remove(list_t *list, size_t idx, list_elem_free_fn elem_free)
-{
-    if (idx >= list->len) {
-        return; // report error?
-    }
-    if (elem_free) {
-        elem_free(list->elems[idx]);
-    }
-    for (size_t i = idx; i < list->len; ++i) { // list might contain NULLs
-        list->elems[i] = list->elems[i + 1]; // ensures a terminating NULL
-    }
-    list->len--;
-}
+// void list_remove(list_t *list, size_t idx, list_elem_free_fn elem_free)
+// {
+//     if (idx >= list->len) {
+//         return; // report error?
+//     }
+//     if (elem_free) {
+//         elem_free(list->elems[idx]);
+//     }
+//     for (size_t i = idx; i < list->len; ++i) { // list might contain NULLs
+//         list->elems[i] = list->elems[i + 1]; // ensures a terminating NULL
+//     }
+//     list->len--;
+// }
 
-void list_clear(list_t *list, list_elem_free_fn elem_free)
-{
-    if (elem_free) {
-        for (size_t i = 0; i < list->len; ++i) { // list might contain NULLs
-            elem_free(list->elems[i]);
-        }
-    }
-    list->len = 0;
-    if (list->elems) {
-        list->elems[0] = NULL; // ensure a terminating NULL
-    }
-}
+// void list_clear(list_t *list, list_elem_free_fn elem_free)
+// {
+//     if (elem_free) {
+//         for (size_t i = 0; i < list->len; ++i) { // list might contain NULLs
+//             elem_free(list->elems[i]);
+//         }
+//     }
+//     list->len = 0;
+//     if (list->elems) {
+//         list->elems[0] = NULL; // ensure a terminating NULL
+//     }
+// }
 
 void list_free_elems(list_t *list, list_elem_free_fn elem_free)
 {
