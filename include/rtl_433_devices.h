@@ -279,21 +279,7 @@
  * Subset of devices that I have access to and have tested with
  */
 #  define DEVICES         \
-    DECL(fineoffset_WH2)             \
-    DECL(fineoffset_WH25)            \
-    DECL(fineoffset_WH51)            \
-    DECL(fineoffset_WH0530)          \
-    DECL(fineoffset_wh1050)          \
-    DECL(fineoffset_wh1080)          \
-    DECL(fineoffset_wh1080_fsk)      \
-    DECL(fineoffset_wh31l)           \
-    DECL(fineoffset_wh45)            \
-    DECL(fineoffset_wh46)            \
-    DECL(fineoffset_wh55)            \
-    DECL(fineoffset_wn34)            \
-    DECL(fineoffset_ws80)            \
     DECL(fineoffset_ws90)            \
-    DECL(lacrosse_tx141x)            \
     DECL(tpms_abarth124)             \
     DECL(tpms_ave)                   \
     DECL(tpms_bmw)                   \
