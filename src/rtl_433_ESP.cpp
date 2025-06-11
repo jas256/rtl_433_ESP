@@ -26,7 +26,7 @@
 #include "receiver.h"
 #include "signalDecoder.h"
 
-RadioLibHal* hal = new EspHal(5, 19, 27);
+RadioLibHal* hal = new EspHal(RF_MODULE_SCK, RF_MODULE_MISO, RF_MODULE_MOSI);
 #define millis hal->millis
 #define micros hal->micros
 #define pinMode hal->pinMode
