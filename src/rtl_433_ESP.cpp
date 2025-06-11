@@ -175,7 +175,7 @@ void rtl_433_ESP::initReceiver(byte inputPin, float receiveFrequency) {
 #  ifdef RF_MODULE_INIT_STATUS
   logprintfLn(LOG_INFO, STR_MODULE " SPI Config SCK: %d, MISO: %d, MOSI: %d, CS: %d", RF_MODULE_SCK, RF_MODULE_MISO, RF_MODULE_MOSI, RF_MODULE_CS);
 #  endif
-  newSPI.begin(RF_MODULE_SCK, RF_MODULE_MISO, RF_MODULE_MOSI, RF_MODULE_CS);
+  // newSPI.begin(RF_MODULE_SCK, RF_MODULE_MISO, RF_MODULE_MOSI, RF_MODULE_CS);
 #endif
 
   /*----------------------------- Initialize Transceiver -----------------------------*/
