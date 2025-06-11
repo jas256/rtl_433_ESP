@@ -279,13 +279,16 @@
  * Subset of devices that I have access to and have tested with
  */
 #  define DEVICES         \
-    DECL(acurite_986)     \
-    DECL(skylink_motion)  \
-    DECL(prologue)        \
-    DECL(philips_aj3650)  \
-    DECL(fineoffset_WH51) \
+    DECL(fineoffset_ws90)            \
+    DECL(tpms_abarth124)             \
+    DECL(tpms_ave)                   \
+    DECL(tpms_bmw)                   \
+    DECL(tpms_bmwg3)                 \
+    DECL(tpms_citroen)               \
 /* Add new personal decoders here. */
-#  define NUMOFDEVICES 5
+#  define NUMOFDEVICES 6
+#  define NUMOF_OOK_DEVICES 6
+#  define NUMOF_FSK_DEVICES 6
 #endif
 
 #define DECL(name) extern r_device name;
