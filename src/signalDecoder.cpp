@@ -353,8 +353,12 @@ void rtlSetup() {
     // end of fragment
 
 #else
-    memcpy(&cfg->devices[0], &govee, sizeof(r_device));
-    memcpy(&cfg->devices[1], &govee_h5054, sizeof(r_device));
+    memcpy(&cfg->devices[0], &fineoffset_ws90, sizeof(r_device));
+    memcpy(&cfg->devices[1], &tpms_abarth124, sizeof(r_device));
+    memcpy(&cfg->devices[2], &tpms_ave, sizeof(r_device));
+    memcpy(&cfg->devices[3], &tpms_bmw, sizeof(r_device));
+    memcpy(&cfg->devices[4], &tpms_bmwg3, sizeof(r_device));
+    memcpy(&cfg->devices[5], &tpms_citroen, sizeof(r_device));
 #endif
 
 #ifdef RTL_FLEX
