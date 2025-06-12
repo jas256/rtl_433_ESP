@@ -423,6 +423,7 @@ void rtl_433_ESP::resetReceiver() {
  */
 void rtl_433_ESP::enableReceiver() {
   if (receiverGpio >= 0) {
+    vTaskDelay(100); // Wait for the rest of the system to be ready
     pinMode(receiverGpio, INPUT);
     attachInterrupt((uint8_t)receiverGpio, interruptHandler, CHANGE);
     _enabledReceiver = true;
